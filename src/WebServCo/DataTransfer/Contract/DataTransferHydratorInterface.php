@@ -7,9 +7,9 @@ namespace WebServCo\DataTransfer\Contract;
 interface DataTransferHydratorInterface
 {
     /**
-     * phpcs:disable SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint
+     * @phpcs:disable SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint
      * @param array<mixed> $data
-     * phpcs: enable
+     * @phpcs:enable
      */
     public function hydrate(array $data): DataTransferInterface;
 }
