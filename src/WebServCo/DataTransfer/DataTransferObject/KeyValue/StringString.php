@@ -8,7 +8,17 @@ use WebServCo\DataTransfer\Contract\DataTransferInterface;
 
 final class StringString implements DataTransferInterface
 {
-    public function __construct(public readonly string $key, public readonly string $value)
+    /**
+     * @readonly
+     */
+    public string $key;
+    /**
+     * @readonly
+     */
+    public string $value;
+    public function __construct(string $key, string $value)
     {
+        $this->key = $key;
+        $this->value = $value;
     }
 }
